@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Keyboard Game!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="middle-container">
+            <img src="image.png">
+            <div class="middle-container-up hidden" id="middle-container-up">
+                <div class="score">Score<br><div class="score-value" id="score-value"></div></div>
+                <div class="time">Time left<br><div class="time-value" id="time-value"></div></div>
+                <div class="level">Level<br><div class="level-value" id="level-value"></div></div>
+            </div>
+            <div class="middle-container-middle" id="middle-container-middle">
+                <p id="text">
+                    This game will test your keyboard skills.<br><br>
+                    Rules:<br>
+                    - Press the right key within the time limit.<br>
+                    - Every score of +5 will increase your level by 1.<br>
+                    - The amount of time will decrease by 1 with every level.<br>
+                    - You win the game by reaching level 10.<br><br>
+                    Good luck and please don't try this on your mobile phone.
+                </p>
+                <input type="text" class="input-form" placeholder="typ maar" id="word-input" autofocus>
+            </div>
+            <div class="middle-container-low">
+                <div class="message" id="message"></div>
+            <div class="btn" id="btn">START</button>
+            </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

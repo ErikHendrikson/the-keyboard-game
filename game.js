@@ -53,7 +53,13 @@ function init(){
     levelDisplay.innerHTML = level;
     wordInput.addEventListener("input", startRound);
     // Call Time Left every second
-    window.int1 = setInterval(countdown, 1000);
+    function countdownDetermine () {
+        if (time < 2) {
+            window.int1 = setInterval(countdown, 0);
+        } else {
+            window.int1 = setInterval(countdown, 1000);
+        }};
+    countdownDetermine();
     // Check if game is over (all the time)
     window.int2 = setInterval (checkStatus, 50);
     // Check if pressed key equals to letter
